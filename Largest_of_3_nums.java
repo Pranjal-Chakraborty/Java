@@ -10,7 +10,7 @@ public class Largest_of_3_nums {
         int c = scan.nextInt();
         scan.close();
         
-        if(a >= b && a >= c){
+        if((a >= b) && (a >= c)){
             System.out.println("The largest number is : " + a);
         }
         else if(b >= c){
