@@ -1,11 +1,17 @@
+import java.util.Scanner;
+
 public class Break {
     public static void main(String[] args) {
-        for(int i = 0; i <= 5; i++){
-            if(i == 4){
-                System.out.println("You are out of the loop.");
+        Scanner scan = new Scanner(System.in);
+        
+        do{
+            System.out.println("Enter your number : ");
+            int n = scan.nextInt();
+            System.out.println("The entered number is : "+ n);
+            if (n % 10 == 0){
                 break;
             }
-            System.out.println(i);
-        }
+        }while(true);
+        scan.close();
     }
 }
