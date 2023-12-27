@@ -3,16 +3,17 @@ import java.util.Scanner;
 public class If{
     public static void main(String[] args) {
         
-        System.out.println("Enter your age : ");
+        System.out.println("Enter two numbers : ");
         Scanner scan = new Scanner(System.in);
-        int age = scan.nextInt();
+        int a = scan.nextInt();
+        int b = scan.nextInt();
         scan.close();
         
-        if(age >= 18){
-            System.out.println("You are an adult.");
+        if(a >= b){
+            System.out.println("The largest number is : " + a);
         }
         else{
-            System.out.println("You are not an adult.");
+            System.out.println("The largest number is : " + b);
         }
     }
 }
