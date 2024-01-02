@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Call_by_value {
 
     public static void square(int n){
+        
         n *= n;
         System.out.println("The output inside the square function is : " + n);
     }
