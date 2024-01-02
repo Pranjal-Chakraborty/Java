@@ -1,3 +1,5 @@
+//This code shows that java always uses call by value method while calling of a function.
+
 import java.util.Scanner;
 
 public class Call_by_value {
