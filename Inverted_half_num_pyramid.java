@@ -10,9 +10,7 @@ public class Inverted_half_num_pyramid {
         scan.close();
         System.out.println("The pyramid will be : ");
 
-        // Outer loop
         for(int i = 1; i <= height ; i++){
-            // Spaces
             for(int j = 1; j <= height - i + 1; j++){
                 System.out.print(j + " ");
             }
