@@ -8,6 +8,7 @@ public class Hollow_rectangle {
         int rows = scan.nextInt();
         int cols = scan.nextInt();
         scan.close();
+        System.out.println("The rectangle will be : ");
 
         for (int i = 1; i <= rows; i++){
             for(int j = 1; j <= cols; j++){
