@@ -27,7 +27,7 @@ public class Binary_search {
 
         int array[] = new int[len];
 
-        System.out.println("Enter the elements of the array : ");
+        System.out.println("Enter the elements of the array in sorted order : ");
         for(int i = 0; i < len; i++){
             array[i] = scan.nextInt();
         }
