@@ -3,7 +3,6 @@ import java.util.Scanner;
 public class Reverse_array {
 
     public static void reverse(int arr[]){
-       
         int start = 0, end = arr.length-1;
        while(start < end){
         int temp = arr[end];
