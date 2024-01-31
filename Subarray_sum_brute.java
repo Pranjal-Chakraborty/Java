@@ -4,7 +4,7 @@ public class Subarray_sum_brute {
     public static void subarray_sum(int arr[]){
         int sum = 0;
         int maxsum = Integer.MIN_VALUE;
-        int minsum = 0;
+        int minsum = arr[0];
         for(int i = 0; i < arr.length ; i++){
             for(int j = i; j < arr.length ; j++){
                 sum = 0;
