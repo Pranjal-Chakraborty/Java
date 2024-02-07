@@ -4,7 +4,7 @@ public class iiD_array {
     public static void main(String[] args) {
         
         Scanner scan = new Scanner(System.in);
-        System.out.println("Enter the number od students : ");
+        System.out.println("Enter the number of students : ");
         int m = scan.nextInt();
         System.out.println("Enter the number of the subjects : ");
         int n = scan.nextInt();
