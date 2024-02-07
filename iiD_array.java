@@ -11,7 +11,7 @@ public class iiD_array {
 
         int marks[][] = new int[m][n];
         for(int i = 0; i < m; i++){
-            for(int j =0; j < n; j++){
+            for(int j = 0; j < n; j++){
                 System.out.print("Enter Student " + (i+1) + " subject " + (j+1) + " marks : ");
                 marks[i][j] = scan.nextInt();
             }
