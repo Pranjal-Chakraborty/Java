@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class String_compress {
     public static String compressString(String str){
-        StringBuffer newstr = new StringBuffer("");
+        StringBuilder newstr = new StringBuilder("");
         for(int i = 0; i < str.length(); i++){
             Integer count = 1;
             while(i < str.length()-1 && str.charAt(i) == str.charAt(i+1)){
