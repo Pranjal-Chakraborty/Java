@@ -6,7 +6,7 @@ public class Strings {
         }
         System.out.println();
     }
-    public static void main (String args[]){
+    public static void main (String[] args){
         String firstname = "Pranjal";
         String lastname = "Chakraborty";
         String fullname = firstname + " " + lastname;
