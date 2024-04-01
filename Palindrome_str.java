@@ -13,6 +13,7 @@ public class Palindrome_str {
     public static void main(String[] args) {
         String string = new String();
         Scanner scan = new Scanner(System.in);
+        System.out.println("Enter the string : ");
         string = scan.next();
         scan.close();
         boolean result = check_palindrome(string);
