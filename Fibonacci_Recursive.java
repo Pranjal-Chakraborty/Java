@@ -16,8 +16,8 @@ public class Fibonacci_Recursive {
         System.out.println("Enter the range : ");
         int num = scan.nextInt();
         scan.close();
-        System.out.println("The fibonacci series of " + num + " numbers is : ");
-        for(int i = 0; i < num; i++){
+        System.out.println("The fibonacci series of " + num + " is : ");
+        for(int i = 0; i <= num; i++){
             System.out.print(fibonacci(i)+ " ");
         }
     }
