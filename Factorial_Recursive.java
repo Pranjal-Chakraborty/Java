@@ -1,4 +1,4 @@
-import java. util.*;
+import java.util.*;
 
 public class Factorial_Recursive {
     
