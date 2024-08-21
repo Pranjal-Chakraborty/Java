@@ -6,8 +6,7 @@ public class Fibonacci_Recursive {
         if(n == 0 || n == 1){
             return n;
         }
-        int fib = fibonacci(n-1) + fibonacci(n-2);
-        return fib;
+        return fibonacci(n-1) + fibonacci(n-2);
     }
 
     public static void main(String args[]){
@@ -16,8 +15,8 @@ public class Fibonacci_Recursive {
         System.out.println("Enter the range : ");
         int num = scan.nextInt();
         scan.close();
-        System.out.println("The fibonacci series of " + num + " is : ");
-        for(int i = 0; i <= num; i++){
+        System.out.println("The fibonacci series of " + num + " numbers is : ");
+        for(int i = 0; i < num; i++){
             System.out.print(fibonacci(i)+ " ");
         }
     }
