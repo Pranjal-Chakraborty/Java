@@ -31,7 +31,8 @@ public class Nqueens {
     public static void nQueens(char board[][], int row){
         //Base Case
         if(row == board.length){
-            printBoard(board);
+            count ++;
+            printBoard(board, count);
             return;
         }
         //Recursion
@@ -44,9 +45,9 @@ public class Nqueens {
         }
     }
 
-    public static void printBoard(char board[][]){
+    public static void printBoard(char board[][], int count){
 
-        System.out.println("_______ Chess Board _______");
+        System.out.println("_______ Solution Number " + count + " _______");
         for(int i = 0; i < board.length; i++){
             for(int j = 0; j < board.length; j++){
                 System.out.print(board[i][j] + " ");
@@ -55,6 +56,7 @@ public class Nqueens {
         }
     }
 
+    static int count = 0;
     public static void main (String args[]){
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter the number of rows in the chess board : ");
@@ -68,5 +70,6 @@ public class Nqueens {
         }
         System.out.println("The all possible safe positions of " + row + " queens in " + row + " number of rows are : ");
         nQueens(board, 0);
+        System.out.println("The number of all possible solutions are : " + count);
     }
 }
