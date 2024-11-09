@@ -18,9 +18,9 @@ public class SwapArrList {
 
         System.out.println("Before swapping the arraylist is : " + list);
         Scanner scan = new Scanner(System.in);
-        System.out.println("Position 1 = ");
+        System.out.print("Position 1 = ");
         int ind1 = scan.nextInt();
-        System.out.println("Position 2 = ");
+        System.out.print("Position 2 = ");
         int ind2 = scan.nextInt();
         scan.close();
         swap(list, ind1, ind2);
