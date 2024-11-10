@@ -13,5 +13,9 @@ public class ArrListSort {
         System.out.println("Before sorting the arraylist is : " + list);
         Collections.sort(list);
         System.out.println("After sorting the arraylist is : " + list);
+
+        //Sorting in descending order
+        Collections.sort(list, Collections.reverseOrder());
+        System.out.println("After sorting in reverse order the arraylist is : " + list);
     }
 }
