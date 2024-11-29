@@ -30,7 +30,7 @@ public class PairSumSorted {
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter the size of your list : ");
         int size = scan.nextInt();
-        System.out.println("Enter the elements of the ArrayList : ");
+        System.out.println("Enter the elements of the List : ");
         for(int i = 0; i < size; i++){
             int val = scan.nextInt();
             array.add(val);
