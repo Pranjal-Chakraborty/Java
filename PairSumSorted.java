@@ -3,7 +3,7 @@ import java.util.Scanner;
 import java.util.Collections;
 
 public class PairSumSorted {
-    public static boolean pairSum(ArrayList<Integer> arr, int key){
+    public static int[] pairSum(ArrayList<Integer> arr, int key){
         Collections.sort(arr);
         int sum = 0;
         int lp = 0;
@@ -12,7 +12,7 @@ public class PairSumSorted {
         while(lp != rp){
             sum = arr.get(lp) + arr.get(rp);
             if(sum == key){
-                return true;
+                return new int[]{lp, rp};
             }
             else if(sum < key){
                 lp++;
@@ -22,8 +22,9 @@ public class PairSumSorted {
             }
         }
 
-        return false;
+        return new int[]{-1, -1};
     }
+
     public static void main(String[] args) {
         ArrayList<Integer> array = new ArrayList<>();
         Scanner scan = new Scanner(System.in);
@@ -37,9 +38,9 @@ public class PairSumSorted {
         System.out.println("Enter the sum you are searching for : ");
         int target = scan.nextInt();
         scan.close();
-        boolean result = pairSum(array, target);
-        if(result == true){
-            System.out.println("There is a pair in the list that gives the target sum.");
+        int[] result = pairSum(array, target);
+        if(result[0] != -1){
+            System.out.println("There is a pair in the list that gives the target sum and those elements are " + array.get(result[0]) + " and " + array.get(result[1]));
         }
         else{
             System.out.println("There is no pair in the list that gives the target sum.");
